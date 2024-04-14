@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="src/styles/styles.css">
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Landing page</title>
+</head>
+<body>
+    <header>
+        <nav id ="navbar">
+            <i class="fa-solid fa-bolt" id="nav_logo"> bolt </i>       <!-- logo da header-->
+            
+           <!-- <div id="div-search">
+                <input type="text" id="txt-search"/>   
+                <i class="fa-brands fa-searchengin" id="btn-search" alt="Buscar">
+                    
+                -->
+                </i>       
+                
+            </div>
+              
+            <ul id = "nav_list">
+                <li class = "nav-item active">
+                    <a href="#home">Inicio</a>
+                </li>
+
+                <li class = "nav-item">                       <!-- divisões do site -->
+                    <a href="#menu">Modelos</a>
+                </li>
+
+                <li class = "nav-item">
+                    <a href="#testmonials">Contato</a>
+                </li>
+            </ul>
+
+            <button class="btn-default">    <!-- botão normal (pc)-->
+                Garanta o seu!
+            </button>
+
+            <button id = "mobile_btn">              <!-- botão mobile -->
+                <i class = "fa-solid fa-bars"></i>
+            </button>
+        </nav>
+
+        <div id="mobile_menu">
+
+            <ul id = "mobile_nav_list">
+                <li class = "nav-item">
+                    <a href="#home">Inicio</a>
+                </li>
+
+                <li class = "nav-item">                       <!-- divisões do site mobile -->
+                    <a href="#menu">Modelos</a>
+                </li>
+
+                <li class = "nav-item">
+                    <a href="#testmonials">Contato</a>
+                </li>
+            </ul>
+            
+            <button class="btn-default">    <!-- botão normal (mobile)-->
+                 Garanta o seu! 
+            </button>
+
+        </div>
+    </header>
+
+    <main id = "content">
+        <section id="home">
+            <div class="shape"></div>
+            <div id="cta">
+                <h1 class = "title">
+                    Os tênis mais DIFERENCIADOS 
+                    do mercado
+                </h1>
+
+                <p  class = "description">
+                   Venha conhecer nossas coleções imperdíveis!
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="#" class=" btn-default">
+                        Ver opções
+                    </a>
+
+                    <a href="tel:+5571993955005" id="phone_button">
+                        <button class ="btn-default">
+                            <i class = "fa-solid fa-phone"></i>
+                            
+                             (71) 99395-5005
+                        </button>
+                        
+                    </a>
+                </div>
+            </div>
+
+            <div class="social-media-buttons">
+                <a href="">
+                    <i class = "fa-brands fa-whatsapp "></i>
+                </a>
+                <a href="">
+                    <i class = "fa-brands fa-instagram"></i>
+                </a>
+            </div>
+
+            <div id="banner">
+                <img src="src/images/bolt.png" alt="">
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class = "section-title">Modelos</h2>
+            <h3 class="section-subtitle">Nossos melhores Sneakers</h3>
+
+            <div id="sneakers">
+                <div class="sneaker">   <!--tenis bolt-->
+                    <img src="src/images/tenis-bolt.png" alt="" class="sneaker-img">
+
+                    <h3 class="sneaker-title">Tenis Bolt V4</h3>
+                   <!-- <button class="btn-default"  id="open-modal">Ver mais</button>
+                        <div id="fade" class="hide"></div>
+                        <div id="modal" class = "hide"></div>
+                        <button class="btn-default" id="close-modal">Fechar</button>
+                        <div id="modal-body">
+                            <p>modal</p>-->
+                            <span class="sneaker-description">
+                                Nossa silhueta clássica, vítima de 17 processos ao todo tanto de Kanye West quanto Adidas.
+                                
+                            </span>
+
+                            <div class="sneaker-price">
+                            <h4> R$ 699,90 </h4>
+                            <button class="btn-default">
+                                Ver mais
+                                <i class = "fa-solid fa-shopping-cart"></i>
+                            </button>
+                           </div>
+                       <!--  </div>-->
+                        
+                </div>
+
+                <div class="sneaker">   <!--tenis buracao-->
+                    <img src="src/images/tenis-buracao.png" alt="" class="sneaker-img">
+
+                    <h3 class="sneaker-title">Tenis "Big Hole"</h3>
+
+                    <span class="sneaker-description">
+                        Esse modelo foi pensado por nossa equipe de engenheiros para conseguir suportar até as maiores valas e buracos.
+                        
+                    </span>
+
+                    <div class="sneaker-price">
+                       <h4> R$ 399,90 </h4>
+                       <button class="btn-default">
+                       Ver mais
+                        <i class = "fa-solid fa-shopping-cart"></i>
+                       </button>
+                    </div>
+                </div>
+
+                <div class="sneaker">   <!--tenis pato-->
+                    <img src="src/images/tenis-pato.png" alt="" class="sneaker-img">
+
+                    <h3 class="sneaker-title">Tenis Duk</h3>
+
+                    <span class="sneaker-description">
+                        Modelo despojado e versátil, perfeito de desfiles de passarela até olimpíadas de programação.
+                        
+                    </span>
+
+                    <div class="sneaker-price">
+                       <h4> R$ 699,90 </h4>
+                       <button class="btn-default">
+                        Ver mais
+                        <i class = "fa-solid fa-shopping-cart"></i>
+                       </button>
+                    </div>
+                </div>
+
+                <div class="sneaker">   <!--tenis soussa-->
+                    <img src="src/images/tenis-soussa.png" alt="" class="sneaker-img">
+
+                    <h3 class="sneaker-title">Sapato LeMarcio</h3>
+
+                    <span class="sneaker-description">
+                       <!-- Uma nova proposta da nossa equipe foi sair da zona de confroto e ir para a linha de luxo, com sapatos mais clássicos. -->
+                       
+                        <p>O modelo LeMarcio é banhado a ouro e é perfeito para motoristas de T-Cross.</p>
+                        
+                    </span>
+
+                    <div class="sneaker-price">
+                       <h4> R$ 6999,90 </h4>
+                       <button class="btn-default">
+                        Ver mais
+                        <i class = "fa-solid fa-shopping-cart"></i>
+                       </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    <footer class="footer">
+        <div id="footer-items">
+            
+            <span id="copyright">
+                &copy 2024 - Artur Janahú
+            </span>
+            <div class="social-media-buttons">
+                <a href="">
+                    <i class = "fa-brands fa-whatsapp "></i>
+                </a>
+                <a href="">
+                    <i class = "fa-brands fa-instagram"></i>
+                </a>
+            </div>
+
+        </div>
+    </footer>
+
+
+
+    <script src = "src/javascript/script.js"></script>
+</body>
+</html>
